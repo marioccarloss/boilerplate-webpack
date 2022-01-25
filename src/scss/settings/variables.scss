@@ -1,0 +1,15 @@
+
+:root {
+  --color-font: #2b2b2b;
+  --color-primary: #000000;
+  --color-secondary: #f1f1f1;
+}
+
+$color-font: var(--color-font);
+$color-primary: var(--color-primary);
+$color-secondary: var(--color-secondary);
+$breakpoints: (
+  "small": 768px,
+  "medium": 1024px,
+  "large": 1200px,
+) !default;

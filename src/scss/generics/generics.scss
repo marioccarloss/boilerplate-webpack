@@ -1,0 +1,128 @@
+@use '../settings/variables.scss' as var;
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+b,
+strong {
+  font-weight: 500;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 500;
+}
+
+p {
+  margin: 0;
+  font-weight: 400;
+}
+
+select {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 451.847 451.847' fill='%23e2e2e2'><path d='M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751 c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0 c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z'/></svg>");
+  background-size: 0.72rem;
+  background-position: calc(100% - 1rem) center;
+  background-repeat: no-repeat;
+}
+
+button,
+input,
+select,
+textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  font-family: unset;
+  color: unset;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+/* prettier-ignore */
+input[type=password] {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    segoe ui,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    apple color emoji,
+    segoe ui emoji,
+    segoe ui symbol;
+}
+
+html,
+body {
+  -webkit-tap-highlight-color: transparent;
+  width: 100%;
+  min-height: 100%;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  color: var.$color-primary;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+  scroll-behavior: smooth;
+}

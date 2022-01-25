@@ -1,0 +1,55 @@
+{
+  "name": "boilerplate-webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Mario Carlos Roca Peñafiel <marioccarloss@gmail.com>",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "autoprefixer": "^10.4.2",
+    "babel-loader": "^8.2.3",
+    "browser-sync": "^2.27.7",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.5.1",
+    "fibers": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "image-webpack-loader": "^8.1.0",
+    "import-glob-loader": "^1.1.0",
+    "mini-css-extract-plugin": "^2.5.3",
+    "moment": "^2.29.1",
+    "node-sass": "^7.0.1",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.2.3",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.49.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.3"
+  },
+  "browserslist": {
+    "production": [
+      "> 1%",
+      "last 2 versions",
+      "not ie <= 8"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "last 1 ie version"
+    ]
+  }
+}
